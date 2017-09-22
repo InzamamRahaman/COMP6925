@@ -1,9 +1,11 @@
+# Example on page 47
+
 using JuMP
-using Clp
-#using Ipopt
+#using Clp
+using Ipopt
 
 #m = Model(solver = ClpSolver())
-#m = Model(solver = IpoptSolver())
+m = Model(solver = IpoptSolver())
 
 # specify variables and their ranges
 @variable(m, x1 >= 0)
