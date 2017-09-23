@@ -13,6 +13,6 @@ binary for your operating system.
 
 6. Install Cbc and Cbl using the command `Pkg.add("Cbc")`
 
-7. Install the optimization packages using `Pkg.add("CoinOptServices")`
+7. Install the optimization packages using `Pkg.add("AmplNLWriter")`
 
 
