@@ -7,8 +7,12 @@ m = Model(solver = ClpSolver())
 @variable(m, x1 >= 0)
 @variable(m, x2 >= 0)
 
+X = [x1, x2]
+
+C = [0.4, 0.5]
+
 # specify the objective function to optimize and whether to minimize or maximize
-@objective(m, Min, 0.4x1 + 0.5x2)
+@objective(m, Min, dot(C, X))
 
 # specify the constraints
 @constraint(m, 0.3x1 + 0.1x2 <= 2.7)

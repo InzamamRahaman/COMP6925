@@ -6,7 +6,7 @@ using Clp
 m = Model(solver = ClpSolver())
 
 # specify variables and their ranges
-@variable(m, 0 <= x1 <= 1)
+@variable(m, x1 <= -1)
 @variable(m, 0 <= x2 <= 1)
 @variable(m, 0 <= x3 <= 1)
 @variable(m, 0 <= x4 <= 1)
